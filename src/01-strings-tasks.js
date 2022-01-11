@@ -66,7 +66,7 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
 function extractNameFromTemplate(value) {
-  return value.substring(value.indexOf(',') + 2, value.indexOf('!'));// return value.slice(value.indexOf(',') + 2, value.indexOf('!'));
+  return value.substring(value.indexOf(',') + 2, value.indexOf('!'));
 }
 
 
@@ -127,7 +127,7 @@ function repeatString(value, count) {
  *   'ABABAB','BA' => 'ABAB'
  */
 function removeFirstOccurrences(str, value) {
-  return str.replace(`${value}`, '');//  return str.replace(new RegExp(value, 'i'), '');
+  return str.replace(`${value}`, '');
 }
 
 /**
@@ -142,7 +142,7 @@ function removeFirstOccurrences(str, value) {
  *   '<a>' => 'a'
  */
 function unbracketTag(str) {
-  return str.slice(1, str.length - 1);// return str.slice(str.indexOf('<') + 1, str.indexOf('>'));
+  return str.slice(1, str.length - 1);
 }
 
 
